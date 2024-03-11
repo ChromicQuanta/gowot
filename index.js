@@ -4,7 +4,7 @@ http.createServer((q,s)=>{
     s.end("GOWOT")
 })
 function createWS(){
-ws = new WebSocket("wss://ourworldoftext.com/cq/ws/?key=4q6x")
+ws = new WebSocket("wss://ourworldoftext.com/cq/ws/?key=4q66x")
     
 ws.onclose = createWS
     ws.onopen = ()=>{
