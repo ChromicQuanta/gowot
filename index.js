@@ -70,7 +70,7 @@ function Transcribe(){
     edts = []
     for(y=0;y<height/3;y++){
     for(x=0;x<width/2;x++){
-        edts.push(char(xy2tc([x,y]),getSymbol([[arr[0][y*3][x*2],arr[0][y*3][x*2+1]], [arr[0][y*3+1][x*2],arr[0][y*3+1][x*2+1]], [arr[0][y*3+2][x*2],arr[0][y*3+2][x*2+1]]]),0))
+        edts.push(char(xy2tc([x+100,y]),getSymbol([[arr[0][y*3][x*2],arr[0][y*3][x*2+1]], [arr[0][y*3+1][x*2],arr[0][y*3+1][x*2+1]], [arr[0][y*3+2][x*2],arr[0][y*3+2][x*2+1]]]),0))
     }
     }
 }
