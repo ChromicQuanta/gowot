@@ -2,7 +2,7 @@ WebSocket = require("ws")
 http = require("http")
 http.createServer((q,s)=>{
     s.end("GOWOT")
-})
+}).listen(80)
 function createWS(){
 ws = new WebSocket("wss://ourworldoftext.com/cq/ws/?key=4q66x")
     
