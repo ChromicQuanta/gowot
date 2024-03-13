@@ -84,7 +84,7 @@ function xy2tc([x,y]){
     return [[Math.floor(x/16),Math.floor(y/8)],[x-Math.floor(x/16)*16,y-Math.floor(y/8)*8]]
 }
 function char([[tx,ty],[cx,cy]],char,clr){
-    return[ty,tx,cy,cx,Date.now(),char,2,clr]
+    return[ty,tx,cy,cx,Date.now(),char,2,clr,255]
 }
 
 golRule = [[0,0,0,1,0,0,0,0,0],[0,0,1,1,0,0,0,0,0]]
